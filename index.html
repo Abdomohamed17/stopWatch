@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+<title>stopWatch pro</title>
+<!-- <link rel="stylesheet" href="font/all.min.css">
+<link rel="stylesheet" href="font/fontawesome.min.css"> -->
+<meta name="description" content="stopWatch pro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+/* body {
+  background-color: #000;
+} */
+
+
+/* .stopwatch {
+  caret-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px #444;
+  color: #fff;
+  width:460px;
+  height: 30vh;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+} */
+
+
+/* .child2 {
+  font-size: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -30px;
+  position: relative;
+}
+
+div .hr {
+  position: relative;
+  right:33px
+}
+
+ div .mn {
+  position: relative;
+  left:40px;
+}
+
+ div .sec {
+  margin-left: 110px;
+  width: 50px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 80px;
+}
+
+.buttons img {
+  width: 50px;
+  filter: invert(100%);
+  caret-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.flagreset{margin-left: 40px;}
+.flagreset :nth-child(1){
+  width: 70px;
+  filter: invert(60%);}
+.flagreset :nth-child(2){
+  width: 70px;
+  margin-left: 30px;
+  filter: invert(60%)}
+.playpause{position: relative;
+right: 67px;top: 7px;}
+.pause{
+  position: absolute;
+  z-index: 1000;
+  display: none;}
+.play{
+  position: absolute;
+  z-index: 2000;}
+
+.emptyDiv{color: #FFF; 
+text-align: center;}
+.playpause img:nth-child(2){
+  width: 60px;
+
+}
+.playpause img:nth-child(1){
+  width: 60px;
+} */
+
+/* 
+
+@media (max-width:465px){.stopwatch{
+  width: 100%;
+}
+
+.child1{
+  text-align: center;
+}
+
+}
+
+@media (min-width:320px)and (max-width:480px){
+  .stopwatch{
+    height: 43vh;
+  }
+}
+
+@media (max-width:310px){
+  .stopwatch{
+  height:40vh;
+}
+  div .hr {
+position: relative;
+left: 30px;
+top: -68px;}
+
+div .mn {
+position: relative;
+top: -68px;
+left: 105px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+left:-95px;
+}
+
+.flagreset{display: flex;
+  flex-direction: column;}
+.flagreset :nth-child(2){
+  margin-left: -60px;
+}}
+
+@media (min-width:180)and(max-width:240px){
+  .stopwatch{
+    height:60vh;
+  }
+}
+@media(max-width:179px){
+
+.stopwatch{height:70vh;width: 100%;}
+.flagreset{margin-left:-68px;margin-top:100px;}
+.flagreset :nth-child(1){
+  width: 70px;
+}
+.flagreset :nth-child(2){
+  margin-top:20px ;
+  width: 70px;
+  margin-left: -5px;
+}
+.playpause{position: relative;
+right:68px;top: 7px;}
+
+div .hr {
+position: relative;
+left: 50px;
+top: -68px;}
+
+div .mn {
+position: relative;
+top: -68px;
+left: 125px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+left:-84px;
+}
+
+
+}
+
+@media (max-width:165px){
+  
+div .hr {
+left: 80px;
+top: -130px;}
+
+div .mn {
+position: relative;
+top: -68px;
+left:60px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+left:-100px;
+}
+
+
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flagreset :nth-child(1){width: 70px;filter: invert(60%);} */
+/* .flagreset :nth-child(2){width: 70px;margin-left: 30px;filter: invert(60%)} */
+/* .playpause{position: relative;
+right: 67px;top: 7px;}
+.pause{position: absolute;z-index: 1000;display: none;}
+.play{position: absolute;z-index: 2000;}
+
+.emptyDiv{color: #FFF; 
+text-align: center;}
+.playpause img:nth-child(2){
+  width: 60px;
+
+}
+.playpause img:nth-child(1){
+  width: 60px;
+} */
+
+/* media */
+/* @media (max-width:640px){
+.stopwatch {
+width:350px;}
+
+.buttons{position: relative;left:5px;}
+.child1{
+font-size: larger;}
+      
+div .hr {
+position: relative;
+right: 10px;}
+
+div .mn {
+position: relative;
+right:10px;}
+
+.playpause img:nth-child(2) , 
+.playpause img:nth-child(1){
+width:40px;}
+
+.playpause{position: relative;
+right: 60px;}
+
+
+.flagreset :nth-child(1){width: 50px;position: relative;left:10px ;}
+.flagreset :nth-child(2){width: 50px;margin-right: 20px;
+}
+.flagreset{margin-left: 20px;}
+
+} */
+
+/* _____________________________________ */
+
+/* @media (max-width:430px){
+.stopwatch {
+width:300px;
+height: 25vh;}
+
+.child1{
+font-size: xx-large;
+  }
+  
+  div .hr {
+position: relative;
+right: -8px;
+font-size:15px;
+}
+
+div .mn {
+position: relative;
+left: 20px;
+font-size:15px;
+}
+
+div .sec {
+position: relative;
+font-size:15px;
+right: 5px;
+}
+
+.playpause img:nth-child(2) , 
+.playpause img:nth-child(1){
+width: 30px;}
+
+.playpause{position: relative;
+right:45px;
+top: -0.5px;
+margin-top: 2px;}
+
+
+.flagreset :nth-child(1){  width: 36px;position: relative;left:7px ;}
+.flagreset :nth-child(2){width: 36px;margin-right:30px;
+}
+.flagreset{margin-left: 20px;}
+
+} */
+
+
+/* ___________________________________________ */
+/* @media (min-width:641px) and (max-width:840px){
+  .buttons{position: relative;left:5px;}
+
+  .stopwatch {
+width:370px;
+height:30vh;}
+
+.child1{
+font-size: larger;
+  }
+  
+  div .hr {
+position: relative;
+font-size:18px;
+left:-10px;
+}
+
+div .mn {
+position: relative;
+left: 10px;
+font-size:18px;
+}
+
+div .sec {
+position: relative;
+font-size:18px;
+left: -4px;}
+
+.playpause img:nth-child(2) , 
+.playpause img:nth-child(1){
+width:40px;top:-5px}
+
+.playpause{position: relative;
+right:55px;}
+
+
+.flagreset :nth-child(1){  width: 47px;position: relative;left:7px ;}
+.flagreset :nth-child(2){width: 47px;margin-right:30px;
+}
+.flagreset{margin-left: 20px;}
+
+} */
+/* ___________________________________________ */
+/* @media (min-width:841px) {
+  .stopwatch {
+width:450px;
+height:30vh;}
+ 
+div .hr {
+position: relative;
+font-size:18px;
+right:20px;
+}
+
+div .mn {
+font-size:18px;
+margin-left:20px;
+} 
+div .sec {
+position: relative;
+font-size:18px;
+left:14px;}
+
+
+} */
+/* @media(max-width:150px){.perant{display: flex;flex-direction: column;}
+.stopwatch{display: flex;flex-direction: column;}
+.child1{display: flex;flex-direction: column;}
+.flagreset{display: flex;flex-direction: column;}
+.buttons{display: flex;flex-direction: column;}
+.playpause{display: flex;flex-direction: column;}
+.zero3{display: flex;flex-direction: column;margin-right: 20px;}
+.ms{margin-right: 20px;}} */
+body {
+  background-color: #000;
+}
+
+.stopwatch {
+  caret-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px #444;
+  color: #fff;
+  width:460px;
+  height: 30vh;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.child2 {
+  font-size: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -30px;
+  position: relative;
+}
+
+div .hr {
+  position: relative;
+  right:33px
+}
+
+ div .mn {
+  position: relative;
+  left:40px;
+}
+
+ div .sec {
+  margin-left: 110px;
+  width: 50px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 80px;
+}
+
+.buttons img {
+  width: 50px;
+  filter: invert(100%);
+  caret-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.flagreset{margin-left: 40px;}
+.flagreset :nth-child(1){
+  width: 70px;
+  filter: invert(60%);}
+.flagreset :nth-child(2){
+  width: 70px;
+  margin-left: 30px;
+  filter: invert(60%)}
+.playpause{position: relative;
+right: 67px;top: 7px;}
+.pause{
+  position: absolute;
+  z-index: 1000;
+  display: none;}
+.play{
+  position: absolute;
+  z-index: 2000;}
+
+.emptyDiv{color: #FFF; 
+text-align: center;}
+.playpause img:nth-child(2){
+  width: 60px;
+
+}
+.playpause img:nth-child(1){
+  width: 60px;
+}
+
+
+
+@media (max-width:465px){
+  .stopwatch{
+  width: 100%;
+}
+
+.child1{
+  text-align: center;
+}
+
+}
+@media(width:320px){
+  .stopwatch{
+    height: 40vh;
+  }
+}
+
+@media (max-width:310px){
+  .stopwatch{
+  height: 48vh;
+}
+  div .hr {
+position: relative;
+left: 30px;
+top: -68px;}
+
+div .mn {
+position: relative;
+top: -68px;
+left: 105px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+left:-95px;
+}
+
+.flagreset{display: flex;
+  flex-direction: column;}
+.flagreset :nth-child(2){
+  margin-left: -60px;
+}}
+
+
+
+@media  (max-width:179px){
+  div .hr {
+left:48px;
+}
+
+div .mn {
+left:125px;}
+
+
+div .sec {
+left: -80px;
+}
+
+.stopwatch{height:70vh;width: 100%;}
+.flagreset{margin-left:-68px;margin-top:100px;}
+.flagreset :nth-child(1){
+  width: 70px;
+}
+.flagreset :nth-child(2){
+  margin-top:20px ;
+  width: 70px;
+  margin-left: -5px;
+}
+.playpause{position: relative;
+right:68px;top: 7px;}
+
+div .hr {
+position: relative;
+left: 85px;
+top: -130px;}
+
+div .mn {
+position: relative;
+top: -68px;
+left: 60px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+left:-95px;
+}
+
+
+}
+
+@media(min-width:150px) and (max-width:165px){
+  div .hr {
+position: relative;
+left: 82px;
+top:-130px;}
+
+div .mn {
+position: relative;
+top: -69px;
+left: 60px;}
+
+
+div .sec {
+position: relative;
+top: -10px;
+right:40px;
+}
+}
+
+@media (max-width:130px){
+  .stopwatch{
+    min-width: 100px;
+  }
+}
+
+@media (width:1024px){
+  .stopwatch{height: 30vh;;}
+}
+</style>
+
+</head>
+<body>
+ <div class="perant">
+  <div class="stopwatch">
+    <h2 class="child1">
+      <span class="zero1">00 : </span> 
+      <span class="zero2">00 : </span> 
+      <span class="zero3">00.<span class="ms">00</span></span></h2>
+    <div class="child2">
+      <span class="hr">hr</span>
+      <span class="mn">min</span>
+      <span class="sec">sec</span>  
+    </div>
+    <div class="buttons">
+      <div class="playpause">
+<img onclick="action()" src="8665236_circle_play_icon.png" class="play">
+<img onclick="stop()" src="8665214_circle_pause_icon.png" class="pause">
+
+      </div>
+      <div class="flagreset">
+        <img onclick="attachment()" src="3044693_app_essential_flag_interface_ui_icon.png" class="flag">
+        <img onclick="reset()" src="9034960_reload_circle_icon.png" class="reset">
+      </div>
+     
+    </div>
+    </div>
+ </div>
+ <div  class="emptyDiv"></div>
+ 
+
+ 
+<script>
+
+
+
+
+let [h, s, m, ms] = [0, 0, 0, 0];
+let setStart;
+let setUpdate;
+
+function start() {
+  let pause = document.getElementsByClassName("pause")[0] ;
+  let play = document.getElementsByClassName("play")[0] ;
+  let flag = document.getElementsByClassName("flag")[0];
+  let reset = document.getElementsByClassName("reset")[0];
+
+  play.style.display="none" ;
+  pause.style.display="block" ;
+  pause.style.filter="invert(60%)" ;
+  flag.style.filter="invert(100%)" ;
+  reset.style.filter="invert(100%)" ;
+ 
+  ms++;
+  if (ms === 100) {
+    ms = 0;
+    m++;
+    if (m === 60) {
+      m = 0;
+      s++;
+      if (s === 60) {
+        s = 0;
+        h++;
+      }
+    }
+  }
+}
+
+function update() {
+  let min = m < 10 ? "0" + m : m;
+  let sec = s < 10 ? "0" + s : s;
+  let hr = h < 10 ? "0" + h : h;
+  let mis = ms < 10 ? "0" + ms : ms;
+  let child1 = document.getElementsByClassName("child1")[0];
+  child1.innerHTML = `${hr} : ${sec} : ${min}.${mis}`;
+
+}
+
+function action() {
+  if (setStart === undefined)
+  {
+      setStart = setInterval(start, 10);
+      setUpdate = setInterval(update, 10);
+   
+  }
+//  or this condition 
+//  if(!setStart){ setStart = setInterval(start, 10);setUpdate = setInterval(update, 10);}
+start()
+}
+
+function attachment() {
+  let emptyDiv = document.getElementsByClassName("emptyDiv")[0];
+  let child1 = document.getElementsByClassName("child1")[0];
+  let pause = document.getElementsByClassName("pause")[0];
+
+  if(child1 !== null && pause.style.display==="block")
+  emptyDiv.innerHTML += child1.innerHTML + "<br>";
+
+}
+function stop() {
+
+  clearInterval(setStart);
+  clearInterval(setUpdate);
+  setStart = undefined;
+  let pause = document.getElementsByClassName("pause")[0] ;
+  let play = document.getElementsByClassName("play")[0] ;
+  let flag = document.getElementsByClassName("flag")[0];
+  flag.style.filter="invert(60%)" ;
+  play.style.display="block" ;
+  pause.style.display="none" ;
+  
+
+  
+}
+
+function reset() {
+  let pause = document.getElementsByClassName("pause")[0] ;
+  let play = document.getElementsByClassName("play")[0] ;
+  let flag = document.getElementsByClassName("flag")[0];
+  let reset = document.getElementsByClassName("reset")[0];
+  let emptyDiv = document.getElementsByClassName("emptyDiv")[0];
+  let child1 = document.getElementsByClassName("child1")[0];
+ 
+  emptyDiv.innerHTML=" "
+  clearInterval(setStart)
+  clearInterval(setUpdate)
+  h = 0;
+  s = 0;
+  m = 0;
+  ms = 0;
+  play.style.display="block" ;
+  pause.style.display="none" ;
+  flag.style.filter="invert(60%)" ;
+  reset.style.filter="invert(60%)" ;
+
+  
+  update();
+  stop() ;
+  
+}
+
+
+
+
+// another code to make function attachment
+// let [h, s, m, ms] = [0, 0, 0, 0];
+// let setStart;
+// let setUpdate;
+// let isRunning;
+
+// function attachment() {
+//   let emptyDiv = document.getElementsByClassName("emptyDiv")[0];
+//   let child1 = document.getElementsByClassName("child1")[0];
+//   let pause = document.getElementsByClassName("pause")[0];
+//   if(child1 !== null && isRunning)
+//   emptyDiv.innerHTML += child1.innerHTML + "<br>";
+  
+// }
+// function start() {
+//   let pause = document.getElementsByClassName("pause")[0] ;
+//   let play = document.getElementsByClassName("play")[0] ;
+//   let flag = document.getElementsByClassName("flag")[0];
+//   let reset = document.getElementsByClassName("reset")[0];
+//   play.style.display="none" ;
+//   pause.style.display="block" ;
+//   pause.style.filter="invert(60%)" ;
+//   flag.style.filter="invert(100%)" ;
+//   reset.style.filter="invert(100%)" ;
+//   ms++;
+//   if (ms === 100) {
+//     ms = 0;
+//     m++;
+//     if (m === 60) {
+//       m = 0;
+//       s++;
+//       if (s === 60) {
+//         s = 0;
+//         h++;
+//       }
+//     }
+//   }
+// }
+
+// function update() {
+//   let min = m < 10 ? "0" + m : m;
+//   let sec = s < 10 ? "0" + s : s;
+//   let hr = h < 10 ? "0" + h : h;
+//   let mis = ms < 10 ? "0" + ms : ms;
+//   let child1 = document.getElementsByClassName("child1")[0];
+//   child1.innerHTML = `${hr} : ${sec} : ${min}.${mis}`;
+// }
+
+// function action() {
+//   isRunning = true
+//   if (setStart === undefined)
+//   {
+//       setStart = setInterval(start, 10);
+//       setUpdate = setInterval(update, 10);
+   
+//   }
+// //  or this condition 
+// //  if(!setStart){ setStart = setInterval(start, 10);setUpdate = setInterval(update, 10);}
+// start()
+// }
+
+// function stop() {
+//   isRunning = false
+
+//   clearInterval(setStart);
+//   clearInterval(setUpdate);
+//   setStart = undefined;
+//   let pause = document.getElementsByClassName("pause")[0] ;
+//   let play = document.getElementsByClassName("play")[0] ;
+//   let flag = document.getElementsByClassName("flag")[0];
+//   let reset = document.getElementsByClassName("reset")[0];
+//   flag.style.filter="invert(60%)" ;
+//   reset.style.filter="invert(100%)" ;
+//   play.style.display="block" ;
+//   pause.style.display="none" ;
+
+  
+// }
+
+// function reset() {
+//   let pause = document.getElementsByClassName("pause")[0] ;
+//   let play = document.getElementsByClassName("play")[0] ;
+//   let flag = document.getElementsByClassName("flag")[0];
+//   let reset = document.getElementsByClassName("reset")[0];
+//   let emptyDiv = document.getElementsByClassName("emptyDiv")[0];
+//   emptyDiv.innerHTML=" "
+//   clearInterval(setStart)
+//   clearInterval(setUpdate)
+//   h = 0;
+//   s = 0;
+//   m = 0;
+//   ms = 0;
+//   play.style.display="block" ;
+//   pause.style.display="none" ;
+//   flag.style.filter="invert(60%)" ;
+//   update();
+//   stop() ;
+  
+// }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
